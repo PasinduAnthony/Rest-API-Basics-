@@ -1,0 +1,25 @@
+GET http://localhost:4500/subscribers
+
+###
+GET http://localhost:4500/subscribers/5ed000d342338b43f08ee235
+
+###
+POST http://localhost:4500/subscribers
+Content-Type: application/json
+
+{
+    "name" : "Fernando",
+    "subscribedToChannel" : "PasinduFernando"
+}
+
+###
+DELETE http://localhost:4500/subscribers/5ed0010442338b43f08ee236
+
+###
+PATCH http://localhost:4500/subscribers/5ed01c162179331ee06a17b0
+Content-Type: application/json
+
+{
+    "name" : "Fernando",
+    "subscribedToChannel" : "test"
+}
